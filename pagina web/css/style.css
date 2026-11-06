@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8fa;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+/* Barra de navegación moderna */
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8%;
+    box-shadow: 0 2px 10px rgba(214, 51, 132, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #d63384;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #6c757d;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover, 
+.navbar nav ul li a.active {
+    color: #d63384;
+    font-weight: 600;
+}
+
+/* Banner de Inicio con Foto Real */
+.banner-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 8%;
+    gap: 4rem;
+}
+
+.banner-texto h1 {
+    font-size: 3rem;
+    color: #8b2650;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.banner-texto p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.banner-imagen-contenedor {
+    width: 450px;
+    height: 320px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(214, 51, 132, 0.15);
+}
+
+.banner-imagen-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Botones */
+.btn-rosa {
+    display: inline-block;
+    background-color: #d63384;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(214, 51, 132, 0.3);
+    transition: background 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-rosa:hover {
+    background-color: #b02a6b;
+    transform: translateY(-2px);
+}
+
+/* Secciones de Catálogo (Pasteles y Panes) */
+.seccion-catalogo {
+    padding: 4rem 8%;
+    text-align: center;
+}
+
+.titulo-seccion {
+    font-size: 2.2rem;
+    color: #8b2650;
+    margin-bottom: 0.5rem;
+}
+
+.subtitulo-seccion {
+    color: #777;
+    margin-bottom: 3rem;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.tarjeta-producto {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    border: 1px solid #ffe4e9;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+}
+
+.foto-producto {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.foto-producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.tarjeta-producto:hover .foto-producto img {
+    transform: scale(1.05);
+}
+
+.info-producto {
+    padding: 1.2rem;
+}
+
+.tarjeta-producto h3 {
+    font-size: 1.15rem;
+    color: #8b2650;
+    margin-bottom: 0.5rem;
+}
+
+.tarjeta-producto p {
+    font-size: 0.88rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.precio {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #d63384;
+}
+
+/* Ubicaciones y Contacto */
+.contenedor-ubicaciones {
+    padding: 4rem 8%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sucursales-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.tarjeta-sucursal {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #ffe4e9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    text-align: left;
+}
+
+.tarjeta-sucursal h3 {
+    color: #8b2650;
+    margin-bottom: 0.8rem;
+}
+
+.tarjeta-sucursal p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+}
+
+.formulario-contacto-wrapper {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid #ffe4e9;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    text-align: left;
+}
+
+.formulario-contacto-wrapper h3 {
+    color: #8b2650;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.grupo-campo {
+    margin-bottom: 1.2rem;
+}
+
+.grupo-campo label {
+    display: block;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.grupo-campo input,
+.grupo-campo textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ffb6c1;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.grupo-campo input:focus,
+.grupo-campo textarea:focus {
+    border-color: #d63384;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #8b2650;
+    border-top: 1px solid #ffe4e9;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
