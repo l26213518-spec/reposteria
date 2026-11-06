@@ -11,7 +11,7 @@ body {
     line-height: 1.6;
 }
 
-/* Barra de navegación moderna */
+
 .navbar {
     background-color: #ffffff;
     display: flex;
@@ -49,7 +49,7 @@ body {
     font-weight: 600;
 }
 
-/* Banner de Inicio con Foto Real */
+
 .banner-principal {
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@ body {
     object-fit: cover;
 }
 
-/* Botones */
+
 .btn-rosa {
     display: inline-block;
     background-color: #d63384;
@@ -105,7 +105,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Secciones de Catálogo (Pasteles y Panes) */
+
 .seccion-catalogo {
     padding: 4rem 8%;
     text-align: center;
@@ -182,7 +182,7 @@ body {
     color: #d63384;
 }
 
-/* Ubicaciones y Contacto */
+
 .contenedor-ubicaciones {
     padding: 4rem 8%;
     max-width: 900px;
